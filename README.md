@@ -69,15 +69,15 @@ linearSearch = (inputArray, inputValue) => {
 ### Question 3
 
 // Array for entire dewey Decimal system.
-// Array is 10 items long, each item is a class. 
+// Array is 10 items long, each item is a class.
 // Each class is an array of 10 Divisions
 // Each sections is an array of 10 Sections
 let deweySystem = [
-[ 
+[
   //First class in Array
   [
     //First Division in Class
-    [ 
+    [
       //Sections in division
       Computer science, information & general works,
       Knowledge,
@@ -119,11 +119,43 @@ let deweySystem = [
     deweySearch(array[decimalNumber[index]], bookNum, index)
  }
  deweySearch(deweyClasses, 822.3)
- 
+
 
 
 ### Question 4
 
+```
+In Order (left child, parent, right child)
+14 15 19 25 27 35 79 89 90 91
+
+
+        35  
+      /    89  
+    25     /  \  
+    / \   79   91
+  15   27     /
+  /\        90
+14  19
+
+Pre Order (parent, left child, right child)
+35 25 15 14 19 27 89 79 91 90.
+
+
+      35
+    25    89
+  15  27 79  91
+14  19      90
+
+
+Post Order (left Child, Right Child Parent)
+
+14 19 15 27 25 79 90 91 89 35
+```
+
 ### Question 5
+
+```
+answer is in main.js
+```
 
 ### Question 6
